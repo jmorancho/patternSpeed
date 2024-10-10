@@ -32,7 +32,7 @@ version = '0.6.3'
 import numpy as np
 import pandas as pd
 import warnings
-from variance import variance
+from .variance import variance
 
 debug = 0
 
@@ -56,7 +56,7 @@ def atan(sin,cos):
 
 def asfarray(array, copy=False, checkFinite=False):
     """ obtain a new float array from input array """
-    arr = np.asfarray(array)             # ensure float data type
+    arr = np.asarray(array, dtype=np.float64)             # ensure float data type
     if checkFinite:
         arr = np.asarray_chkfinite(arr)  # check for NaN or inf
     if copy and arr is array:

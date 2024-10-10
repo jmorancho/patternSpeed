@@ -1,0 +1,1 @@
+from .patternSpeed import FourierMethod

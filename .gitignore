@@ -1,0 +1,14 @@
+# Python bytecode and cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+
+# Distribution files
+dist/
+build/
+*.egg-info/
+
+# Logs and temporary files
+*.log
