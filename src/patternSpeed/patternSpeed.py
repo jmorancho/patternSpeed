@@ -32,7 +32,7 @@ version = '0.6.3'
 import numpy as np
 import pandas as pd
 import warnings
-from variance import variance
+from .variance import variance
 
 debug = 0
 
